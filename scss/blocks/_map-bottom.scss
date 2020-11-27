@@ -1,0 +1,17 @@
+.map__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.map__item {
+  margin: 0 10px 20px;
+}
+.map-card__link {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.map-card__img {
+  display: inline-block;
+  vertical-align: middle;
+}

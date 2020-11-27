@@ -1,0 +1,39 @@
+.site-header {
+  padding: 45px 0;
+  position: relative;
+  background-color: #fff;
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@include breakpoint-down (768) {
+  .site-header {
+    padding: 25px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .menu-burger {
+    border: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    outline: 0;
+    background-image: url("../img/gamburger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-color: transparent;
+  }
+  .site-header--open {
+    background-color:  #F53855;
+  }
+  .site-header--open .menu-burger {
+    background-image: url("../img/gamburger-open.svg");
+  }
+}

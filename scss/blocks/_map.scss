@@ -1,0 +1,38 @@
+.map {
+  padding: 60px 0;
+}
+.map__container {
+  text-align: center;
+}
+.map__text {
+  margin-bottom: 130px;
+}
+.map-img {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 100px;
+}
+@include breakpoint-down (810) {
+  .map__text {
+    margin-bottom: 90px;
+  }
+  .map-img {
+    margin-bottom: 70px;
+  }
+}
+@include breakpoint-down (700) {
+  .map__text {
+    margin-bottom: 40px;
+  }
+  .map-img {
+    margin-bottom: 45px;
+  }
+}
+@include breakpoint-down (500) {
+  .map__text {
+    margin-bottom: 15px;
+  }
+  .map-img {
+    margin-bottom: 30px;
+  }
+}

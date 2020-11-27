@@ -1,0 +1,28 @@
+.logo {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-bottom: 20px;
+}
+.logo-img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 157px;
+}
+@include breakpoint-down (1065) {
+  svg {
+    margin-right: 100px;
+  }
+}
+@include breakpoint-down (1000) {
+  svg {
+    margin-right: 40px;
+  }
+  .site-header--open svg path {
+    fill: #fff;
+  }
+}
