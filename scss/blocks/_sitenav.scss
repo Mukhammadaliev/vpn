@@ -95,14 +95,17 @@
   .site-header--open .site-header__nav {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 86px;
     left: 0;
-    height: 100vh;
+    height: calc(100vh - 86px);
     width: 100%;
     background-color: #F53855;
     padding-top: 50px;
     align-items: center;
+    overflow: auto;
+    z-index: 111;
+    padding-bottom: 30px;
   }
   .site-header--open .navbar__list {
     flex-direction: column;

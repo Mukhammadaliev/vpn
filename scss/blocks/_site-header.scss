@@ -29,9 +29,11 @@
     background-size: contain;
     background-position: center center;
     background-color: transparent;
+    z-index: 3;
   }
   .site-header--open {
     background-color:  #F53855;
+    z-index: 3;
   }
   .site-header--open .menu-burger {
     background-image: url("../img/gamburger-open.svg");

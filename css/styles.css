@@ -466,9 +466,11 @@ img {
     background-size: contain;
     background-position: center center;
     background-color: transparent;
+    z-index: 3;
   }
   .site-header--open {
     background-color: #F53855;
+    z-index: 3;
   }
   .site-header--open .menu-burger {
     background-image: url("../img/gamburger-open.svg");
@@ -611,16 +613,19 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 86px;
     left: 0;
-    height: 100vh;
+    height: calc(100vh - 86px);
     width: 100%;
     background-color: #F53855;
     padding-top: 50px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: auto;
+    z-index: 111;
+    padding-bottom: 30px;
   }
   .site-header--open .navbar__list {
     -webkit-box-orient: vertical;
