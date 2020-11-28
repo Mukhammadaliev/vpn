@@ -14,9 +14,9 @@
 
 .footer-item__text {
   font-weight: 500;
-font-size: 16px;
-line-height: 30px;
-color: $text-color;
+  font-size: 16px;
+  line-height: 30px;
+  color: $text-color;
   margin-bottom: 30px;
 }
 .footer-item__social {
@@ -43,14 +43,14 @@ color: $text-color;
 }
 .footer-item__last-text {
   font-size: 16px;
-line-height: 30px;
-color: #AFB5C0;
+  line-height: 30px;
+  color: #AFB5C0;
 }
 .footer-sub__title {
   font-weight: 500;
-font-size: 18px;
-line-height: 30px;
-margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 .footer-sub__list {
   max-width: 130px;
@@ -63,8 +63,11 @@ margin-bottom: 20px;
 }
 .footer-sub__link {
   font-size: 16px;
-line-height: 30px;
-color: $text-color;
+  line-height: 30px;
+  color: $text-color;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 @include breakpoint-down (1042) {
   .site-footer__list {
